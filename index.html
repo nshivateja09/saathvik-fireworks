@@ -1,96 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAATHVIK FIRE WORKS</title>
-  <link rel="stylesheet" href="design.css">
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom font configuration */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <script>
+    // Tailwind configuration for custom colors/styles if needed,
+    // but we'll stick to default utilities for simplicity.
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fire-orange': '#FF8F06',
+            'dark-bg': '#1a1a1a',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
-  <div class="Top-section">
-    <div class="header">
-      <h1>SAATHVIK FIRE WORKS</h1>
-      <h2>ONLINE DELIVERY AVAILABLE</h2>
-      <p>NEW BOWENPALLY COMZARI BAZAR,NEAR JAYA NAGAR</p>
-      <p class="phone-numbers">
-        <a href="tel:+917995869728">+91 7995869728</a> |
-        <a href="tel:+919505725921">+91 9505725921</a> |
-        <a href="tel:+919398254373">+91 9398254373</a>
-      </p>
-    </div>
-    <div class="category">
-      <div>
-        <img
-          src="https://imgcdn.iar.net.in/d992d54ae97874fee83cbb29d41bcf80044a7a395512a9c73246fe9af44c990dfddf8fba12f8c072ddec1161af02121a138355a054b5cb9acce0f61ff442a697/fit/270/270/sm/1/plain/https://assetv2.iar.net.in/trial1085.iar.net.in/11_8_2025/Lfoxg9g/chakkara%20special%203.jpg"
-          class="categoy-img">
-        <p class="caption">Chakkar(Zamin Chakkar)</p>
-      </div>
-      <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Mj4BUIWRVjsHnYPQIlS6TNwOlSEXZrMbcg&s"
-          class="categoy-img">
-        <p class="caption">Anar(Flower Pot)</p>
-      </div>
-      <div>
-        <img
-          src="https://img1.exportersindia.com/product_images/bc-full/2021/6/4735183/firework-rocket-1622874245-5848221.jpeg"
-          class="categoy-img">
-        <p class="caption">Rocket(Skyrocket)</p>
-      </div>
-      <div>
-        <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/ZZ/ZX/UD/30090017/img-20230113-wa0065.jpg"
-          class="categoy-img">
-        <p class="caption">Sky Shot</p>
-      </div>
-    </div>
-    <div class="category">
-      <div>
-        <img
-          src="https://5.imimg.com/data5/SELLER/Default/2024/9/451832867/UI/UB/LO/36275315/7-cm-green-sparkler-500x500.jpeg"
-          class="categoy-img">
-        <p class="caption">Spark Phuljhari</p>
-      </div>
-      <div>
-        <img src="https://4.imimg.com/data4/SQ/KW/MY-3188893/5000-walas-crackers-500x500.jpg" class="categoy-img">
-        <p class="caption">Ladis</p>
-      </div>
-      <div>
-        <img src="https://5.imimg.com/data5/IOS/Default/2024/7/439175635/OB/PF/YO/141963085/product-jpeg-500x500.png"
-          class="categoy-img">
-        <p class="caption">Atom Bomb/Sutli Bomb</p>
-      </div>
-      <div>
-        <img
-          src="https://5.imimg.com/data5/SELLER/Default/2024/6/430693461/EA/RR/CC/224800268/red-bijili-cracker-500x500.jpg"
-          class="categoy-img">
-        <p class="caption">Bijili Cracker</p>
-      </div>
-    </div>
-    <div class="category">
-      <div>
-        <img src="https://5.imimg.com/data5/YU/CT/MY-3188893/lakshmi-bomb-cracker-500x500.jpg" class="categoy-img">
-        <p class="caption">Lakshmi Bomb Cracker</p>
-      </div>
-      <div>
-        <img src="http://5.imimg.com/data5/IOS/Default/2024/8/439895404/MH/IL/CH/141963085/product-jpeg-250x250.png"
-          class="categoy-img">
-        <p class="caption">Kit Kat Diwali Cracker</p>
-      </div>
-      <div>
-        <img
-          src="https://5.imimg.com/data5/SELLER/Default/2024/9/448248087/QS/OL/ES/4253078/standard-fire-pencil-crackers-1000x1000.jpg"
-          class="categoy-img">
-        <p class="caption">Fire Pencil Cracker</p>
-      </div>
-      <div>
-        <img src="https://4.imimg.com/data4/YB/JG/MY-5161495/4-parrot-cracker-500x500.jpg" class="categoy-img">
-        <p class="caption">Parrot Cracker</p>
-      </div>
-    </div>
-    <div class="footer">
+<body class="bg-dark-bg min-h-screen">
+  <!-- 
+    The original background image cannot be reliably loaded via a simple class, 
+    so we use a dark background and vibrant text colors to maintain the festive theme.
+  -->
 
+  <div class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+    <!-- Header Section -->
+    <header class="text-center p-6 mb-8 rounded-xl shadow-2xl bg-gradient-to-r from-red-800 to-yellow-600 text-white border-b-4 border-yellow-300">
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        SAATHVIK FIRE WORKS
+      </h1>
+      <h2 class="text-xl sm:text-2xl font-semibold mt-2">
+        ONLINE DELIVERY AVAILABLE
+      </h2>
+      <p class="text-sm sm:text-base mt-1 mb-3 text-gray-100">
+        NEW BOWENPALLY COMZARI BAZAR, NEAR JAYA NAGAR
+      </p>
+
+      <!-- Phone Numbers Section -->
+      <div class="phone-numbers text-lg sm:text-xl font-black text-yellow-300 space-x-2 sm:space-x-4">
+        <a href="tel:+917995869728" class="hover:text-white transition duration-200">+91 7995869728</a>
+        <span class="text-gray-200">|</span>
+        <a href="tel:+919505725921" class="hover:text-white transition duration-200">+91 9505725921</a>
+        <span class="text-gray-200">|</span>
+        <a href="tel:+919398254373" class="hover:text-white transition duration-200">+91 9398254373</a>
+      </div>
+    </header>
+
+    <!-- Product Category Section -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Item 1: Chakkar -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://imgcdn.iar.net.in/d992d54ae97874fee83cbb29d41bcf80044a7a395512a9c73246fe9af44c990dfddf8fba12f8c072ddec1161af02121a138355a054b5cb9acce0f61ff442a697/fit/270/270/sm/1/plain/https://assetv2.iar.net.in/trial1085.iar.net.in/11_8_2025/Lfoxg9g/chakkara%20special%203.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Chakkar (Zamin Chakkar) Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Chakkar(Zamin Chakkar)
+        </p>
+      </div>
+
+      <!-- Item 2: Anar -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Mj4BUIWRVjsHnYPQIlS6TNwOlSEXZrMbcg&s"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Anar (Flower Pot) Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Anar(Flower Pot)
+        </p>
+      </div>
+
+      <!-- Item 3: Rocket -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://img1.exportersindia.com/product_images/bc-full/2021/6/4735183/firework-rocket-1622874245-5848221.jpeg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Rocket (Skyrocket) Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Rocket(Skyrocket)
+        </p>
+      </div>
+
+      <!-- Item 4: Sky Shot -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/ZZ/ZX/UD/30090017/img-20230113-wa0065.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Sky Shot Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Sky Shot
+        </p>
+      </div>
+
+      <!-- Item 5: Spark Phuljhari -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/451832867/UI/UB/LO/36275315/7-cm-green-sparkler-500x500.jpeg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Spark Phuljhari Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Spark Phuljhari
+        </p>
+      </div>
+
+      <!-- Item 6: Ladis -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://4.imimg.com/data4/SQ/KW/MY-3188893/5000-walas-crackers-500x500.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Ladis Crackers">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Ladis
+        </p>
+      </div>
+
+      <!-- Item 7: Atom Bomb/Sutli Bomb -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://5.imimg.com/data5/IOS/Default/2024/7/439175635/OB/PF/YO/141963085/product-jpeg-500x500.png"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Atom Bomb/Sutli Bomb Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Atom Bomb/Sutli Bomb
+        </p>
+      </div>
+
+      <!-- Item 8: Bijili Cracker -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/6/430693461/EA/RR/CC/224800268/red-bijili-cracker-500x500.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Bijili Cracker Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Bijili Cracker
+        </p>
+      </div>
+
+      <!-- Item 9: Lakshmi Bomb Cracker -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://5.imimg.com/data5/YU/CT/MY-3188893/lakshmi-bomb-cracker-500x500.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Lakshmi Bomb Cracker Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Lakshmi Bomb Cracker
+        </p>
+      </div>
+
+      <!-- Item 10: Kit Kat Diwali Cracker -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="http://5.imimg.com/data5/IOS/Default/2024/8/439895404/MH/IL/CH/141963085/product-jpeg-250x250.png"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Kit Kat Diwali Cracker Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Kit Kat Diwali Cracker
+        </p>
+      </div>
+
+      <!-- Item 11: Fire Pencil Cracker -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/448248087/QS/OL/ES/4253078/standard-fire-pencil-crackers-1000x1000.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Fire Pencil Cracker Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Fire Pencil Cracker
+        </p>
+      </div>
+
+      <!-- Item 12: Parrot Cracker -->
+      <div class="flex flex-col items-center bg-gray-800 p-3 rounded-xl shadow-xl transition transform hover:scale-[1.03] duration-300 cursor-pointer">
+        <img src="https://4.imimg.com/data4/YB/JG/MY-5161495/4-parrot-cracker-500x500.jpg"
+          class="w-full h-64 object-cover rounded-lg border-2 border-yellow-500"
+          alt="Parrot Cracker Firework">
+        <p class="text-center mt-3 text-white font-medium text-lg capitalize underline">
+          Parrot Cracker
+        </p>
+      </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-gray-500 mt-12 p-4 border-t border-gray-700">
+        &copy; 2024 SAATHVIK FIRE WORKS. All rights reserved.
+    </footer>
   </div>
 </body>
 

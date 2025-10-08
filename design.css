@@ -7,7 +7,7 @@
 
   .header {
     text-align: center;
-    background-image: url(pixels/Gemini_Generated_Image_hehenlhehenlhehe.png);
+    background-image: url(Gemini_Generated_Image_hehenlhehenlhehe.png);
     background-size: contain;
     color: color-mix(in srgb, rgb(255, 143, 6) 70%, rgb(238, 238, 238) 30%);
     background-attachment: fixed;
@@ -92,4 +92,5 @@
       height: 180px;
       /* Smaller image height on mobile */
     }
+
   }
